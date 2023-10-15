@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="css/normalize.css" >
+	<link rel="stylesheet" href="css/main.css" >
+	<!--Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1>See-N-Say Story Maker</h1>
+	<h2>Build Your Story</h2>
+	<p class="first-p">Select One Button from Each Category</p>
+	<p class="second-p">In the Correct Order and Press Your Story button to listen</p>
+	<p id="error-message"></p>
+	<section class="story-creation-section">
+		
+
+		<div class="word-choice">
+			<button class="select-button" id="first-noun-button">Noun #1</button>
+			<img src="./img/firstnoun.jpg" class="button-image" alt="noun-picture">
+		</div>
+
+		<div class="word-choice">
+			<button class="select-button" id="verb-button">Verb</button>
+			<img src="./img/verb.gif" class="button-image" alt="verb-picture">
+		</div>
+
+		<div class="word-choice">
+			<button class="select-button" id="adjective-button">Adjective</button>
+			<img src="./img/adjective.jpg" class="button-image" alt="adjective-picture">
+		</div>
+
+		<div class="word-choice">
+			<button class="select-button" id="second-noun-button">Noun #2</button>
+			<img src="./img/secondnoun.jpg" class="button-image" alt="noun-picture">
+		</div>
+
+		<div class="word-choice">
+			<button class="select-button" id="location-button">Location</button>
+			<img src="./img/location.png" class="button-image" alt="noun-picture">
+		</div>
+	</section>
+
+	<section class="say-story-section">
+		
+		<div class="end-div">
+			<button id="reveal-story" class="controlButton">Your Story</button>
+			<button id="generate-random" class="controlButton">Surprise Me</button>
+			<button id="clear-story" class="controlButton">Start Over</button>
+			
+		</div>
+		<h3>Your Story</h3>
+		<div id="story-container"></div>
+	</section>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

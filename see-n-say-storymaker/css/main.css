@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript
+Kevin Bailey 200544764 */
+
+html {
+    font-size: 10px; /*An easier starting point when using relative units */
+    font-family: 'Autour One', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.first-p, .second-p {
+    display: flex;
+    justify-content: center;
+}
+.story-creation-section {
+    display: flex; /* Arrange divs in a row */
+    justify-content: space-between; /* Even spacing between the columns */
+}
+
+.word-choice {
+    flex: 1;  /* Allow each word-choice div to take up equal width */
+    text-align: center; 
+    margin: 0 1em; 
+}
+
+.button-image {
+    margin-top: 1em; /* Some space between the button and the image */
+}
+.button-image {
+    display: block;
+    width: 80%;
+    margin: 1em auto; /* Centering the image in the parent div */
+}
+
+.select-button, .controlButton {
+    background-color: #000;
+    border: none;
+    border-radius: .5em; 
+    color: white; 
+    padding: 1.2em 2em; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 1em .2em;
+    cursor: pointer; /* Mouse cursor on hover */
+    transition-duration: 0.3s; /* Transition effect on hover */
+}
+
+.select-button:hover, .controlButton:hover {
+    filter: brightness(0.6); /* Makes the button darker on hover */
+}
+
+#first-noun-button {
+    background-color: purple;
+}
+
+#verb-button {
+    background-color: #007BFF;
+}
+
+#adjective-button {
+    background-color: green;
+}
+
+#second-noun-button {
+    background-color: orange;
+}
+
+#location-button {
+    background-color: fuchsia;
+}
+
+.end-div {
+    display: flex;
+    justify-content: center;
+}
+
+#error-message {
+    font-size: 2em;
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+#story-container {
+    display: flex;
+    justify-content: center;
+
+}
