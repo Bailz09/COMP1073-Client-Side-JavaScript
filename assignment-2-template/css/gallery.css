@@ -1,0 +1,90 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.thumbnails {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Using flexbox to distribute thumbnails */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the thumbnails horizontally */
+    gap: 10px;
+    /* Spacing between thumbnails */
+}
+
+.thumbnails li {
+    margin: 5px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    /* Stack featured image on top of thumbnails */
+    align-items: center;
+    /* Center the featured image */
+}
+
+#featured {
+    margin-bottom: 20px;
+    /* Space between featured image and thumbnails */
+}
+
+#featured-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow around the featured image */
+    border-radius: 4px;
+    /* Slightly rounded corners for aesthetics */
+    transition: box-shadow 0.3s ease;
+    /* Smooth transition for the shadow effect */
+    margin-bottom: 1.2em;
+}
+
+#featured-image:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.75);
+    transform: scale(1.05);
+}
+
+/* Style for each thumbnail list item */
+.thumbnail {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    /* Soft shadow around thumbnails */
+    border-radius: 4px;
+    /* Slightly rounded corners for thumbnails */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Smooth transition for hover effects */
+    cursor: pointer;
+    /* Indicates that the thumbnail is clickable */
+    background-color: #f8db64;
+    /* Soft background color */
+    padding: 5px;
+    /* Padding around the image */
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    /* Slight scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.50);
+    /* Larger shadow on hover */
+}
+
+
+.thumbnail:active {
+    border: 2px solid #333;
+    /* Border to highlight the active thumbnail */
+    background-color: #e74848;/
+}
+
+#image-caption {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
